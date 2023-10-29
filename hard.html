@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="hard.css">
+  
+</head>
+<body>
+<h1 class="titulo">Histo-Memory</h1> 
+  <div class="memory-game"></div>
+
+  <div class="game-controls">
+    <div class="intentos-container">
+      <p style="font-size: 15px; padding: 5px 12px;">Intentos: <span id="intentos">0</span></p>
+    </div>
+
+    </div>
+    <button id="reiniciar" style="font-size: 15px; padding: 5px 12px;">Reiniciar Juego</button>
+    </div>
+
+    <div id="logo-container">
+        <img src="./logo-uv/medicina_odonto_2_linies.jpg" alt="Logo Corporativo" id="logo">
+      </div>
+
+    <div id="end-game-message"></div>
+
+    <button id = "main_menu" onclick="redirectToLevel('index.html')">Main Menu</button>
+
+  <script src="hard.js"></script>
+  <script>
+    function redirectToLevel(levelPage) {
+        window.location.href = levelPage;
+    }
+</script>
+</body>
+</html>

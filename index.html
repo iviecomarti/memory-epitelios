@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Links</title>
+    <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+    <h1 class="titulo">Welcome to Histo-Memory!</h1> 
+    <h2 class="subtitulo">Select the level: </h2> 
+
+    <div id="image-container">
+
+        <p id="image-text">Easy</p>
+        <!-- First Image -->
+        <img id="image1" src="./imgs-index/easy.jpg" alt="Image 1">
+        <p id="description">Para familiarizarse con el juego, tenemos 4 parejas</p>
+    </div>
+
+    <div id="image-container">
+
+        <p id="image-text">Medium</p>
+
+        <!-- Second Image -->
+     <img id="image2" src="./imgs-index/medium.jpg" alt="Image 2">
+     <p id="description">¡Incrementamos un poco la dificultad a 6 parejas!</p>
+
+        
+    </div>
+    
+    <div id="image-container">
+
+        <p id="image-text">Hard</p>
+        <!-- Third Image -->
+        <img id="image3" src="./imgs-index/hard.jpg" alt="Image 3">
+        <p id="description">En el nivel difícil tienes 9 parejas. ¿Aceptas el reto?</p>
+
+    </div>
+
+
+    <div id="logo-container">
+        <img src="./logo-uv/medicina_odonto_2_linies.jpg" alt="Logo Corporativo" id="logo">
+      </div>
+
+    <script>
+        // Add a click event listener for each image
+        document.getElementById("image1").addEventListener("click", function () {
+            window.location.href = "easy.html";
+        });
+
+        document.getElementById("image2").addEventListener("click", function () {
+            window.location.href = "medium.html";
+        });
+
+        document.getElementById("image3").addEventListener("click", function () {
+            window.location.href = "hard.html";
+        });
+    </script>
+</body>
+</html>

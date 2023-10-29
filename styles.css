@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    background: #082B3E;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .memory-game {
+    /* Cambia el ancho y el alto según tus preferencias */
+    width: 80vw;
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    position: absolute;
+    top: 20%; /* Ajusta la posición vertical */
+    left: 10%; 
+    
+  }
+  
+  .memory-card {
+    /* Ajusta el ancho y el alto de las tarjetas para que haya 8 en horizontal */
+    width: calc(12.5% - 10px);
+    height: calc(100% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    /*box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);*/
+    
+  }
+  
+  .memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+  
+  .memory-card.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #1C7CCC;
+    backface-visibility: hidden;
+  }
+  
+  .front-face {
+    transform: rotateY(180deg);
+  }
+  
+  .intentos-container {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    position: absolute;
+    bottom: 8%;
+    left: 40%;
+    transform: translate(-50%, 0);
+  }
+  
+  button {
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 8%;
+    left: 55%;
+  }
+  
+  .titulo {
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    /*position: absolute;*/
+    margin-top: 3%;
+   /* left: 40%;*/
+    color: white;
+  }
+  
+
+  .logo-container {
+    justify-content: left;
+  }
+  
+  #logo {
+    position: absolute;
+    width: 350px;
+    height: 60px;
+    margin-top: 3%;
+    left: 5px;
+  }
+
+  
+  
+  
