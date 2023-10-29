@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         frontFace.alt = `Image ${index + 1}`;
         const backFace = document.createElement('img');
         backFace.classList.add('back-face');
-        backFace.src = '../xano/xano.png'; // Add your back face image path
+        backFace.src = './xano/xano.png'; // Add your back face image path
         backFace.alt = 'Back Face';
         memoryCard.appendChild(frontFace);
         memoryCard.appendChild(backFace);
