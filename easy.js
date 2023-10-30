@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const memoryGameContainer = document.querySelector('.memory-game');
     
     
-    const imageNames = ['img1', 'img2', 'img3', 'img4', 'img5','img6','img7','img8'];
+    const imageNames = ['img1', 'img2', 'img3', 'img4', 'img5','img6','img7','img8','img9'];
     const folder1Path = './img'; // Replace with the path to your first folder
     const folder2Path = './img-text'; // Replace with the path to your second folder
     const selectedImages = [];
